@@ -1,0 +1,41 @@
+﻿<Window x:Class="Ejer3Git.ConfiModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuración" Height="135.452" Width="300">
+    <DockPanel LastChildFill="False">
+        <Border DockPanel.Dock="Top" Margin="5,5">
+            <CheckBox Name="showBalls" HorizontalAlignment="Center">
+                Ver bolas en los arboles                
+            </CheckBox>
+        </Border>
+        <Border DockPanel.Dock="Top" Margin="5,5">
+            <ComboBox Name="changeColorBall">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Border>
+                                <Border.Background>
+                                    <SolidColorBrush Color="{Binding Color}"/>
+                                </Border.Background>
+                            </Border>
+                            <TextBlock Text="{Binding Nombre}">
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{Binding Color}"/>
+                                </TextBlock.Foreground>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Estado}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </Border>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Aceptar" Grid.Column="0" Margin="2"/>
+            <Button Content="Cancelar" Grid.Column="1" Margin="2"/>
+        </Grid>
+    </DockPanel>    
+</Window>
