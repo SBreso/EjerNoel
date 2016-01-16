@@ -5,7 +5,7 @@
         Title="Número de estrellas" Height="115" Width="294" ResizeMode="NoResize">
     <Grid>
         <Label Content="Número de estrellas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Slider x:Name="countSlider" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="229" Maximum="40" Value="20"/>
+        <Slider x:Name="countSlider" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="229" Maximum="40" Value="20" ValueChanged="countSlider_ValueChanged"/>
         <Label x:Name="countLabel" Content="20" HorizontalAlignment="Left" Margin="244,41,0,0" VerticalAlignment="Top" Height="33" Width="37"/>
     </Grid>
 </Window>

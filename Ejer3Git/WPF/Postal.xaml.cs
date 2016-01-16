@@ -42,12 +42,18 @@ namespace Ejer3Git
             base.Closing += new System.ComponentModel.CancelEventHandler(Exit);
             //ventana no modal
             this.StarsWin = new StarsNoModal();
+            StarsWin.countStarsEvent += new StarsNoModal.countStarsDel(countStars_Changed);
             //numero de estrellas de inicio
             this.countStars = 20;
             //color de inicio de bolas
             this.colorBall = Colors.Red;
             //de inicio las bolas se ven
             this.ballVisivility = true;
+        }
+
+        private void countStars_Changed(int n)
+        {
+            this.countStars = n;
         }
         /// <summary>
         /// Manejador del evento que se produce al cerra la app

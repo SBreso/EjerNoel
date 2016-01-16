@@ -19,9 +19,20 @@ namespace Ejer3Git
     /// </summary>
     public partial class StarsNoModal : Window
     {
+        public delegate void countStarsDel(int n);
+        public event countStarsDel countStarsEvent;
         public StarsNoModal()
         {
             InitializeComponent();
+        }
+        private void countSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            try
+            {
+                this.countLabel.Content = (int)this.countSlider.Value;
+                countStarsEvent((int)this.countSlider.Value);
+            }
+            catch (Exception ex) { }
         }
     }
 }
