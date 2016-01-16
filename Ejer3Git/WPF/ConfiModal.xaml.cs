@@ -47,7 +47,20 @@ namespace Ejer3Git
         {
             this.addColorNavidad();
             this.changeColorBall.ItemsSource = xtmasColorList;
-            this.changeColorBall.SelectedItem = xtmasColorList.ElementAt(0);
+            this.showBalls.IsChecked = this.ballVisivility;
+            selectColorNavidad(this.colorAns);
+        }
+
+        private void selectColorNavidad(Color c)
+        {
+            foreach (ColorNavidad cn in xtmasColorList)
+            {
+                if(cn.Color.Equals(c))
+                {
+                    this.changeColorBall.SelectedItem=cn;
+                    return;
+                }
+            }
         }
         /// <summary>
         /// Aceptamos

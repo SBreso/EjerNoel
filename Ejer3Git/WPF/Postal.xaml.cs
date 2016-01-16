@@ -50,7 +50,10 @@ namespace Ejer3Git
             //de inicio las bolas se ven
             this.ballVisivility = true;
         }
-
+        /// <summary>
+        /// Manejador del evento camnbio de numEstrellas
+        /// </summary>
+        /// <param name="n"></param>
         private void countStars_Changed(int n)
         {
             this.countStars = n;
@@ -96,14 +99,40 @@ namespace Ejer3Git
         {
             ConfiModal confiWin = new ConfiModal();
             confiWin.Owner = this;
+            confiWin.ballVisivility = this.ballVisivility;
+            confiWin.colorAns = this.colorBall;
             confiWin.ShowDialog();
             if (confiWin.DialogResult == true)
             {
-                
+                this.colorBall = confiWin.colorAns;
+                this.ballVisivility = confiWin.ballVisivility;
+                resetBall(this.tercerArbol);
+                resetBall(this.primerArbol);
+                resetBall(this.segundoArbol);
             }
-            else
+        }
+        /// <summary>
+        /// Resetear las bolas segun configuracion
+        /// </summary>
+        /// <param name="can"></param>
+        private void resetBall(Canvas can)
+        {
+            Ellipse eli = new Ellipse();
+            foreach (Object c in can.Children)
             {
-
+                if (Object.ReferenceEquals(c.GetType(), eli.GetType()))
+                {
+                    //Console.WriteLine("oh yeah!!");
+                    ((Ellipse)c).Fill = new SolidColorBrush(this.colorBall);
+                    if (this.ballVisivility)
+                    {
+                        ((Ellipse)c).Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        ((Ellipse)c).Visibility = Visibility.Hidden;
+                    }
+                }
             }
         }
         /// <summary>

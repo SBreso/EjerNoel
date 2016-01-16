@@ -4,8 +4,8 @@
         Title="Configuración" Height="135.452" Width="300" Loaded="Window_Loaded">
     <DockPanel LastChildFill="False">
         <Border DockPanel.Dock="Top" Margin="5,5">
-            <CheckBox Name="showBalls" HorizontalAlignment="Center">
-                Ver bolas en los arboles                
+            <CheckBox Name="showBalls" HorizontalAlignment="Center" IsChecked="True">
+                Ver bolas en los arboles
             </CheckBox>
         </Border>
         <Border DockPanel.Dock="Top" Margin="5,5">
