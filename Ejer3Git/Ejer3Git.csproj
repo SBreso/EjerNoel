@@ -53,14 +53,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="StarsNoModal.xaml.cs">
+    <Compile Include="WPF\StarsNoModal.xaml.cs">
       <DependentUpon>StarsNoModal.xaml</DependentUpon>
     </Compile>
-    <Page Include="ConfiModal.xaml">
+    <Page Include="WPF\ConfiModal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Postal.xaml">
+    <Page Include="WPF\Postal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -68,14 +68,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ConfiModal.xaml.cs">
+    <Compile Include="WPF\ConfiModal.xaml.cs">
       <DependentUpon>ConfiModal.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Postal.xaml.cs">
+    <Compile Include="WPF\Postal.xaml.cs">
       <DependentUpon>Postal.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="StarsNoModal.xaml">
+    <Page Include="WPF\StarsNoModal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -103,13 +103,13 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\Strjmono.ttf" />
+    <Resource Include="WPF\Resources\Strjmono.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\christmasBall.png" />
+    <Resource Include="WPF\Resources\christmasBall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
