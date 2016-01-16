@@ -1,0 +1,17 @@
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\bin\Debug\Ejer3Git.exe.config
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\bin\Debug\Ejer3Git.exe
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\bin\Debug\Ejer3Git.pdb
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.csprojResolveAssemblyReference.cache
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\ConfiModal.baml
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\Postal.baml
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\StarsNoModal.baml
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\ConfiModal.g.cs
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\Postal.g.cs
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\WPF\StarsNoModal.g.cs
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\App.g.cs
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git_MarkupCompile.cache
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.g.resources
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.Properties.Resources.resources
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.csproj.GenerateResource.Cache
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.exe
+E:\DAM\VORO_2DAM\DI\U6\Practica\Ejer3Git\Ejer3Git\obj\Debug\Ejer3Git.pdb
