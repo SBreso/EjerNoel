@@ -142,15 +142,16 @@ namespace Ejer3Git
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            this.labelNoel.Margin = new Thickness(this.ActualWidth,0,0,0);
             this.starList = new List<Star>();
             for (int i = 0; i < 40; i++)
             {
                 this.starList.Add(new Star(this.gridCenter));
             }
-            timer.Interval = TimeSpan.FromMilliseconds(500);
+            timer.Interval = TimeSpan.FromMilliseconds(200);//1/2 segundo
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
-        }
+        }        
         /// <summary>
         /// Que hacer cada tick. Mover el labelNoel. Mostrar estrellas
         /// </summary>

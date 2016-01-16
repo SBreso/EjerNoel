@@ -50,7 +50,10 @@ namespace Ejer3Git
             this.showBalls.IsChecked = this.ballVisivility;
             selectColorNavidad(this.colorAns);
         }
-
+        /// <summary>
+        /// Que colorNavidad esta selecionado segun el color de las bolas
+        /// </summary>
+        /// <param name="c"></param>
         private void selectColorNavidad(Color c)
         {
             foreach (ColorNavidad cn in xtmasColorList)
