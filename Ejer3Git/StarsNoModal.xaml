@@ -1,0 +1,11 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Ejer3Git.StarsNoModal"
+        Title="Número de estrellas" Height="115" Width="294">
+    <Grid>
+        <Label Content="Número de estrellas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="countSlider" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="229" Maximum="40" Value="20" MouseLeftButtonUp="countSlider_MouseLeftButtonUp" ValueChanged="countSlider_ValueChanged"/>
+        <Label x:Name="countLabel" Content="20" HorizontalAlignment="Left" Margin="244,41,0,0" VerticalAlignment="Top" Height="33" Width="37"/>
+    </Grid>
+</Window>
