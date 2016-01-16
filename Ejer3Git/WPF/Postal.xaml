@@ -4,10 +4,10 @@
         Width="525" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Icon="./Resources/christmasBall.png" WindowStartupLocation="CenterScreen">
+        Icon="./Resources/christmasBall.png" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <DockPanel>
         <!--Canvas donde ira el label que se moverá-->
-        <Canvas x:Name="canvasTop" DockPanel.Dock="Top" Height="55" Background="#FF050623">
+        <Canvas x:Name="canvasTop" DockPanel.Dock="Top" Height="55">
             <Label FontFamily="pack://application:,,,./Resources/#Star Jedi Logo MonoLine" x:Name="labelNoel" 
                    Content="Feliz N0avidad" FontSize="25" Foreground="#FFE8CA41" FontWeight="Bold"/>
         </Canvas>
@@ -23,7 +23,7 @@
             <Button x:Name="okButton" Content="OK" Grid.Column="2" Margin="5" Click="okButton_Click"/>
         </Grid>
         <!--grid de la targeta-->
-        <Grid x:Name="gridCenter">
+        <Grid x:Name="gridCenter" Margin="0,-55,0,0" Panel.ZIndex="-1">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF050623" />
